@@ -10,19 +10,11 @@
 Pod::Spec.new do |s|
   s.name             = "VennPlaces"
   s.version          = "0.1.0"
-  s.summary          = "A short description of VennPlaces."
-  s.description      = <<-DESC
-                       An optional longer description of VennPlaces
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
-                       DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/VennPlaces"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.summary          = "Get normalized place data from Foursquare, Yelp, Facebook, Google, and Factual."
+  s.homepage         = "https://github.com/VennHQ/venn-places-ios"
   s.license          = 'MIT'
-  s.author           = { "Steven White" => "swhitewvu24@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/VennPlaces.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { "Venn" => "tim@getvenn.io" }
+  s.source           = { :git => "https://github.com/VennHQ/venn-places-ios.git", :tag => s.version.to_s }
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
