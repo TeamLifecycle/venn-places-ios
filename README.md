@@ -15,6 +15,13 @@ it, simply add the following line to your Podfile:
 
     pod "VennPlaces"
 
+
+## Contributing
+
+Open `Example/VennPlaces.xcworkspace`.
+
+See [http://guides.cocoapods.org/making/making-a-cocoapod.html](http://guides.cocoapods.org/making/making-a-cocoapod.html) for details.
+
 ## Usage
 
 Include the `VennPlaces.h` header.
