@@ -14,6 +14,7 @@ static VennPlaces *_sharedInstance = nil;
 @interface VennPlaces()
 
 @property (nonatomic, copy, readwrite) NSString *apiKey;
+@property (nonatomic, copy, readwrite) NSString *baseUrl;
 
 @end
 
@@ -30,11 +31,11 @@ static VennPlaces *_sharedInstance = nil;
 }
 
 - (void)searchWithQuery:(NSDictionary *)search andCallback:(void (^)(NSURLResponse *, NSData *, NSError *))cb {
-    NSString *urlString = kVennSearchUri;
+    NSString *urlString = self.baseUrl;
     BOOL first = YES;
     if ([search count] > 0) {
         for (NSString *key in search) {
-            urlString = [urlString stringByAppendingFormat:@"%@%@=%@", first ? @"?" : @"&", key, search[key]];
+            urlString = [urlString stringByAppendingFormat:@"&%@=%@", key, search[key]];
             first = NO;
         }
     }
@@ -47,6 +48,7 @@ static VennPlaces *_sharedInstance = nil;
     self = [super init];
     if (self) {
         self.apiKey = key;
+        self.baseUrl = [NSString stringWithFormat:@"%@?key=%@", kVennSearchUri, key];
     }
     return self;
 }
