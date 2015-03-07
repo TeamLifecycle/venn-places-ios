@@ -16,8 +16,10 @@ describe(@"VennPlaces", ^{
         });
         
         it(@"should perform a search", ^{
-            NSDictionary *query = [NSDictionary dictionaryWithObjectsAndKeys:@"chinese", @"keyword", @"food", @"category", nil];
-            [[VennPlaces sharedPlaces] searchWithQuery:query andCallback:^(NSURLResponse *res, NSData *data, NSError *err) {
+            NSDictionary *query = [NSDictionary dictionaryWithObjectsAndKeys:@"chinese", @"keyword",
+                                   @"food", @"category", nil];
+            [[VennPlaces sharedPlaces] searchWithQuery:query
+                   andCallback:^(NSURLResponse *res, NSData *data, NSError *err) {
                 NSLog(@"%@", err);
                 NSLog(@"%@", data);
             }];
