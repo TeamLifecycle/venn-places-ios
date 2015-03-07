@@ -35,6 +35,7 @@ Request your places.
 
 NSDictionary *query = [NSDictionary dictionaryWithObjectsAndKeys:@"chinese", @"keyword",
         @"food", @"category", nil];
+
 [[VennPlaces sharedPlaces] searchWithQuery:query
         andCallback:^(NSURLResponse *res, NSData *data, NSError *err) {
     NSLog(@"%@", err);
