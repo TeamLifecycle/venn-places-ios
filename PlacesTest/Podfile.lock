@@ -1,0 +1,14 @@
+PODS:
+  - VennPlaces (0.1.0)
+
+DEPENDENCIES:
+  - VennPlaces (from `../`)
+
+EXTERNAL SOURCES:
+  VennPlaces:
+    :path: ../
+
+SPEC CHECKSUMS:
+  VennPlaces: 8cbe701d647cdafc3db151aa15998c306de065d1
+
+COCOAPODS: 0.35.0
