@@ -26,5 +26,5 @@
  *
  * @param query Map of date to build search query for request
  */
-- (void)searchWithQuery:(NSDictionary *) query andCallback:(void (^)(NSURLResponse *, NSData *, NSError *))cb;
+- (void)searchWithQuery:(NSDictionary *) query andCallback:(void (^)(NSDictionary *, NSError *))cb;
 @end
