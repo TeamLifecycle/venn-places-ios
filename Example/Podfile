@@ -1,7 +1,0 @@
-source 'https://github.com/CocoaPods/Specs.git'
-
-target 'VennPlaces', :exclusive => true do
-  pod "VennPlaces", :path => "../"
-
-  pod 'Kiwi'
-end
