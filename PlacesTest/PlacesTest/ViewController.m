@@ -36,18 +36,15 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSDictionary *place = (NSDictionary *)[places objectAtIndex:indexPath.row];
-    NSLog(@"have place: %@", place);
     NSString *name = [place objectForKey:@"name"];
     NSLog(@"have name: %@", name);
     
     // Get Cell
-    NSLog(@"Getting cell");
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"places"];
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"places"];
     }
     
-    NSLog(@"Return cell");
     cell.textLabel.text = name;
     return cell;
 }
