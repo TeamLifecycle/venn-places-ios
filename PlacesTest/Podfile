@@ -1,0 +1,5 @@
+workspace 'VennPlaces'
+target 'PlacesTest', :exclusive => true do
+  pod "VennPlaces", :path => "../"
+
+end
